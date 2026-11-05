@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "HTTP Status Code Checker - Bulk Redirect & Status",
+  "version": "1.1.0",
+  "description": "Check HTTP status codes (200, 301, 302, 307, 308, 404, 410, 500 etc) for up to 200 URLs with full redirect chain, response time and export.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Status Code Checker",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "author": "Hamza Ghanchi"
+}
